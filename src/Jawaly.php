@@ -2,10 +2,10 @@
 
 namespace Aghanem\Jawaly;
 
-use Aghanem\Jawaly\Gateway\AghanemGateway;
+use Aghanem\Jawaly\Gateway\JawalyGateway;
 use Aghanem\Jawaly\SmsLog;
 
-class Aghanem
+class Jawaly
 {
 
     private $username;
@@ -17,7 +17,7 @@ class Aghanem
     public function __construct()
     {
 
-        $this->jawaly = new AghanemGateway();
+        $this->jawaly = new JawalyGateway();
         $this->from = config('jawaly.sender');
         $this->username = config('jawaly.username');
         $this->password = config('jawaly.password');

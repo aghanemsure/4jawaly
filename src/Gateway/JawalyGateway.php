@@ -6,7 +6,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Psr7;
 
-class AghanemGateway extends GatewayAbstract
+class JawalyGateway extends GatewayAbstract
 {
 
     const SUCCESS_CODES = [100];
