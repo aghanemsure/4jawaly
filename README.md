@@ -3,7 +3,7 @@
 ## Installation
 Begin by installing this package through Composer. Run this command from the Terminal:
 ```
-composer require jawaly/smsgateway
+composer require aghanem/jawaly
 ```
 ## Laravel integration
 
