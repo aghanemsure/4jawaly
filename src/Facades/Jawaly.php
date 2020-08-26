@@ -4,7 +4,7 @@ namespace Aghanem\Jawaly\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Aghanem extends Facade
+class Jawaly extends Facade
 {
 
     /**

@@ -31,7 +31,7 @@ class SmsServiceProvider extends ServiceProvider
     {
         $this->app->bind('jawaly', function ()
         {
-            return new \Aghanem\Jawaly\Aghanem();
+            return new \Aghanem\Jawaly\Jawaly();
         });
     }
 
