@@ -13,16 +13,16 @@ Aghanem\Jawaly\SmsServiceProvider::class
 ```
 Add new item to aliases array:
 ```
-'Aghanem' => Aghanem\Jawaly\Facades\Aghanem::class
+'Jawaly' => Aghanem\Jawaly\Facades\Jawaly::class
 ```
 This will allow you to use Aghanem facade :
 ```
-use Aghanem;
+use Jawaly;
 ```
 ...
 
 ```
-Aghanem::send($message);
+Jawaly::send($message);
 ```
 Now you can copy config file and migration file to your project using this line in terminal:
 ```
@@ -45,31 +45,31 @@ You can use file or database to store your message log, if you use database you 
 
 You can use the facade directly.
 ```
-Aghanem::send($message);
+Jawaly::send($message);
 ```
 You can set numbers in two ways:
 ```
-Aghanem::send($message, $numbers);
+Jawaly::send($message, $numbers);
 ```
 or:
 ```
-Aghanem::setTo($numbers)->send($message);
+Jawaly::setTo($numbers)->send($message);
 ```
 
 You can set sender name in two ways:
 ```
-Aghanem::send($message, $numbers, $sender);
+Jawaly::send($message, $numbers, $sender);
 ```
 Or:
 ```
-Aghanem::setFrom($sender)->send($message);
+Jawaly::setFrom($sender)->send($message);
 ```
 
 ## Credit
 This method doesn't take any parameters, you can use it simply:
 
 ```
-Aghanem::getCredits();
+Jawaly::getCredits();
 ```
 This will return an array with credits in second element if first element true, or response message in second element if first element false.
 
