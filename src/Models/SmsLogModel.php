@@ -1,6 +1,6 @@
 <?php
 
-namespace Jawaly\SmsGateway\Models;
+namespace Aghanem\Jawaly\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

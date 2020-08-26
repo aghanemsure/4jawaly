@@ -1,6 +1,6 @@
 <?php
 
-namespace Jawaly\SmsGateway;
+namespace Aghanem\Jawaly;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -31,7 +31,7 @@ class SmsServiceProvider extends ServiceProvider
     {
         $this->app->bind('jawaly', function ()
         {
-            return new \Jawaly\SmsGateway\Jawaly();
+            return new \Aghanem\Jawaly\Aghanem();
         });
     }
 

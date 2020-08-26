@@ -13,7 +13,7 @@ class CreateJawalySmsLogTable extends Migration
      */
     public function up()
     {
-        Schema::create('sms_log', function (Blueprint $table)
+        Schema::create('jawaly_sms_log', function (Blueprint $table)
         {
             $table->increments('id');
             $table->text('numbers');
@@ -33,7 +33,7 @@ class CreateJawalySmsLogTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sms_log');
+        Schema::dropIfExists('jawaly_sms_log');
     }
 
 }

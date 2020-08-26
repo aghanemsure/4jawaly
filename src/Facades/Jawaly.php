@@ -1,10 +1,10 @@
 <?php
 
-namespace Jawaly\SmsGateway\Facades;
+namespace Aghanem\Jawaly\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Jawaly extends Facade
+class Aghanem extends Facade
 {
 
     /**

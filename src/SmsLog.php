@@ -1,9 +1,9 @@
 <?php
 
-namespace Jawaly\SmsGateway;
+namespace Aghanem\Jawaly;
 
 use Illuminate\Support\Facades\Log;
-use Jawaly\SmsGateway\Models\SmsLogModel;
+use Aghanem\Jawaly\Models\SmsLogModel;
 
 class SmsLog
 {

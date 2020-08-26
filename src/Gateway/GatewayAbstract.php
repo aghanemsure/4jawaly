@@ -1,6 +1,6 @@
 <?php
 
-namespace Jawaly\SmsGateway\Gateway;
+namespace Aghanem\Jawaly\Gateway;
 
 abstract class GatewayAbstract
 {

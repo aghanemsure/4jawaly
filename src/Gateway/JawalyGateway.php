@@ -1,12 +1,12 @@
 <?php
 
-namespace Jawaly\SmsGateway\Gateway;
+namespace Aghanem\Jawaly\Gateway;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Psr7;
 
-class JawalyGateway extends GatewayAbstract
+class AghanemGateway extends GatewayAbstract
 {
 
     const SUCCESS_CODES = [100];
