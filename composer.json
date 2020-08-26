@@ -6,6 +6,7 @@
         "sms",
         "gateway"
     ],
+    "license": "MIT",
     "type": "library",
     "require": {
         "ext-curl": "*",
