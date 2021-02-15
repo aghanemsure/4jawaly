@@ -2,6 +2,7 @@
 
 namespace Aghanem\Jawaly;
 
+use Aghanem\Jawaly\Jawaly;
 use Illuminate\Support\ServiceProvider;
 
 class SmsServiceProvider extends ServiceProvider
@@ -29,10 +30,26 @@ class SmsServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
+        $this->app->singleton('jawaly', function($app) {
+            return new Jawaly();
+        });
         $this->app->bind('jawaly', function ()
         {
-            return new \Aghanem\Jawaly\Jawaly();
+            return new Jawaly();
         });
+        $this->app->alias('jawaly', Jawaly::class);
+
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return array('jawaly', Jawaly::class);
     }
 
 }
